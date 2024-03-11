@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Sorting</title>
+</head>
+<body>
+    <script>
+        var a=new Array(100,50,20,80,2,16);
+        document.write("Before sorting: ");
+        for(var i=0;i<6;i++){
+            document.write(a[i]+" ");
+        }
+        document.write("<br><br>");
+      
+        document.write("After sorting: ");
+        var temp;
+        for(var i=0;i<6;i++){
+            for(var j=0;j<5;j++){
+                if(a[j]>a[j+1]){
+                    temp=a[j];
+                    a[j]=a[j+1];
+                    a[j+1]=temp;
+                }
+            }
+        }
+        for(var i=0;i<6;i++){
+            document.write(a[i]+" ");
+        }
+    </script>
+</body>
+</html>
