@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If else statement</title>
+</head>
+<body>
+    <script>
+        var m1=parseInt(prompt("Enter marks 1"));
+        var m2=parseInt(prompt("Enter marks 2"));
+        var m3=parseInt(prompt("Enter marks 3"));
+
+        var total=m1+m2+m3
+        var percentage=total*100/300
+        alert(percentage)
+
+        if (percentage>=85) {
+            alert("Grade A")    
+        } 
+        else if(percentage>=75){
+            alert("Grade B")
+        }
+        else if(percentage>=50){
+            alert("Grade C")
+        }
+        else {
+            alert("Grade D")
+        }
+    </script>
+    
+</body>
+</html>
